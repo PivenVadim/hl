@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <img src="/2.1/img/Screenshot_13.png" >
+        <script>
+            let x = 16;
+            let y = 15;
+            let z = 4;
+
+            let task1 = (x += y - x++ * z);
+            let task2 = (z += --x - y * 5);
+            let task3 = (y /= x + (5 % z));
+            let task4 = (z = x++ + y * 5);
+            let task5 = (x = y - x++ * z);
+            //----------- 1 -------------
+
+            document.write("<div>" + "1-ый пример " + task1 + "</div><br>");
+            document.write("<div>" + "2-ой пример " + task2 + "</div><br>");
+            document.write("<div>" + "3-ий пример " + task3 + "</div><br>");
+            document.write("<div>" + "4-ый пример " + task4 + "</div><br>");
+            document.write("<div>" + "5-ый пример " + task5 + "</div><br>");
+
+            //----------- 2 -------------
+            let a = 2;
+            let b = 10;
+            let c = 150;
+            let sum = (a + b + c) / 3;
+            document.write("<div>" + "Среднее арифметическое равно " + sum + "</div><br>");
+
+            //---------- 3 --------------
+            let radius = prompt("Введите заданный радиус");
+            let hight = prompt("Введите заданную высоту");
+            let volume = Math.PI * radius ** 2 * hight;
+            let area = 2 * Math.PI * radius * hight + 2 * Math.PI * radius ** 2;
+           // let area = 2 * pi * radius * (radius + hight);
+            document.write( ` Обьем =  `  + Math.floor(volume*10 / 10 ));
+            document.write( ` Площадь =  `  +Math.floor(area * 10 / 10));
+
+
+             
+
+        </script>
+    </body>
+</html>
